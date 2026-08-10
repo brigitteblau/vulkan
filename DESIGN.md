@@ -115,7 +115,17 @@ Rules:
 - `public/fonts/Adelline.ttf` — display font (in place).
 - `public/illustrations/` — pink line illustrations (spoon, heart, volcano,
   bag) — SVG/PNG, transparent bg. **Pending.**
-- `public/photos/` — chocolate/volcano/product macro photography. **Pending.**
+- `public/photos/chocolate.png` — macro chocolate swirl, in place. Used as
+  Hero/Ritual/Pedir background and as the Hero video's poster/fallback.
+- `public/photos/` — still need a packaging/bag shot for **Producto**.
+  **Pending.**
+- `public/videos/hero.mp4` — looping macro chocolate footage for the Hero
+  background (see Motion). **Pending.** Spec: muted, seamless loop, H.264 MP4,
+  ~10–20s, no audio needed (video is always rendered `muted`), landscape
+  covering full-bleed (`object-cover`), keep the file light (~5–10MB) since
+  it autoplays on load. Drop it in as `hero.mp4` and it wires in automatically
+  — `TextureBlock` falls back to `chocolate.png` if the file is missing or
+  fails to load.
 - `public/logo/` — clean logo mark. **Pending.**
 
 Until real assets land, sections use color-block/texture placeholders in the

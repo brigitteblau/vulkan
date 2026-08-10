@@ -21,8 +21,8 @@ export default function Hero() {
       className="relative flex h-screen items-end overflow-hidden bg-chocolate"
     >
       <motion.div style={{ scale, opacity }} className="absolute inset-0">
-        <TextureBlock tone="chocolate" parallax />
-        <div className="absolute inset-0 bg-black/10" />
+        <TextureBlock tone="chocolate" video="/videos/hero.mp4" parallax />
+        <div className="absolute inset-0 bg-black/35" />
       </motion.div>
 
       <div className="relative z-10 flex w-full flex-col gap-6 px-6 pb-16 sm:px-10 sm:pb-20">
